@@ -1,12 +1,64 @@
+//@import "global.css";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.grow_bar {
+.grow {
+  font-family: var(--font-family);
   width: 100%;
   max-width: 1520px;
   height: 264px;
-  margin-inline: 64px auto;
   text-align: center;
+  &__bar {
+    margin: 64px;
+    h1 {
+      font-weight: 600;
+      font-size: 60px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      color: var(--color-blackd);
+      //width: 1024px;
+    }
+    p {
+      margin: 24px auto 48px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+      color: var(--color-greyd);
+      width: 768px;
+    }
+    .button_center{
+      font-weight: var(--button-font-weight);
+      line-height: var(--button-line-height);
+      height: var(--button-height);
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .demo {
+        padding: 16px 28px;
+        border-radius: 8px;
+        border: 1px solid #7f56d9;
+        width: 143px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        span {
+          color: var(--color-grey-button);
+        }
+      }
+      .sign_up {
+        padding: 16px 28px;
+        border-radius: 8px;
+        border: 1px solid #7f56d9;
+        width: 121px;
+        margin-left: 12px;
+        span  {
+          color: var(--color-white);
+        }
+      }
+    }
+  }
 }

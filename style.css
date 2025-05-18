@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.grow {
+  width: 100%;
+  max-width: 1520px;
+  height: 264px;
+  text-align: center;
+}
+.grow__bar {
+  margin: 64px 0;
+}
+.grow__bar h1 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: var(--color-black);
+}
