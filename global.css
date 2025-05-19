@@ -32,7 +32,6 @@
 }
 .grow__bar .button_center {
   font-weight: var(--button-font-weight);
-  line-height: var(--button-line-height);
   height: var(--button-height);
   font-size: 18px;
   display: -webkit-box;
@@ -46,6 +45,8 @@
           justify-content: center;
 }
 .grow__bar .button_center .demo {
+  line-height: var(--button-line-height);
+  background-color: var(--color-whited);
   padding: 16px 28px;
   border-radius: 8px;
   border: 1px solid #7f56d9;
@@ -62,14 +63,14 @@
   color: var(--color-grey-button);
 }
 .grow__bar .button_center .sign_up {
+  line-height: var(--button-line-height);
   padding: 16px 28px;
   border-radius: 8px;
   border: 1px solid #7f56d9;
   width: 121px;
   margin-left: 12px;
-}
-.grow__bar .button_center .sign_up span {
-  color: var(--color-white);
+  background-color: var(--color-button);
+  color: var(--color-whited);
 }
 
 :root {
@@ -78,7 +79,8 @@
   --color-blackd: #101828;
   --color-greyd: #667085;
   --color-grey-button: #344054;
-  --color-white: #fff;
+  --color-whited: #fff;
+  --color-button: #7F56D9;
   --button-height: 60px;
   --button-font-weight: 500;
   --button-line-height: 156%;

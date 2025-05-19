@@ -9,10 +9,11 @@
   font-family: var(--font-family);
   width: 100%;
   max-width: 1520px;
+  margin-inline: 64px 0 96px;
   height: 264px;
   text-align: center;
   &__bar {
-    margin: 64px;
+    margin-bottom: 64px;
     h1 {
       font-weight: 600;
       font-size: 60px;
@@ -31,13 +32,14 @@
     }
     .button_center{
       font-weight: var(--button-font-weight);
-      line-height: var(--button-line-height);
       height: var(--button-height);
       font-size: 18px;
       display: flex;
       align-items: center;
       justify-content: center;
       .demo {
+        line-height: var(--button-line-height);
+        background-color: var(--color-whited);
         padding: 16px 28px;
         border-radius: 8px;
         border: 1px solid #7f56d9;
@@ -45,20 +47,30 @@
         display: flex;
         align-items: center;
         gap: 12px;
+        cursor: pointer;
         span {
           color: var(--color-grey-button);
         }
       }
       .sign_up {
+        line-height: var(--button-line-height);
         padding: 16px 28px;
         border-radius: 8px;
         border: 1px solid #7f56d9;
         width: 121px;
         margin-left: 12px;
-        span  {
-          color: var(--color-white);
-        }
+        background-color: var(--color-button);
+        color: var(--color-whited);
+        cursor: pointer;
       }
     }
+  }
+  .&__var {
+    background: url("images/MacBook-Pro-16.webp") center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1280px;
+    height: 706px;
   }
 }
